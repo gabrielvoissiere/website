@@ -40,9 +40,10 @@
         align-items: center;
 
         h2 {
-            font-size: 2.5rem;
+            font-size: 2.25rem;
             border-bottom: 2px solid #E6332A;
             margin-top: 4vh;
+            text-transform: uppercase;
         }
 
         #steps {
@@ -69,11 +70,13 @@
                 h3 {
                     text-transform: uppercase;
                     margin-bottom: 1vh;
+                    font-size: 1.5rem;
                 }
 
                 p {
                     width: 90%;
                     margin-top: 1vh;
+                    font-size: 1.10rem;
                 }
             }
 

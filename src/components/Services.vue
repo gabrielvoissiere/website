@@ -64,7 +64,8 @@
         h2 {
             border-bottom: 2px solid #E6332A;
             margin-top: 2vh;
-            font-size: 2.5rem;
+            font-size: 2.25rem;
+            text-transform: uppercase;
         }
 
         #services {
