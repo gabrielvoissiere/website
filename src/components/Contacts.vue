@@ -1,5 +1,5 @@
 <template>
-    <section id="global">
+    <section id="contacts">
         <p>Me contacter</p>
         <h2>développeur web freelance</h2>
         <p>
@@ -10,7 +10,7 @@
             formulaire ou directement par mail ou téléphone.
         </p>
 
-        <div id="contacts">
+        <div id="contact">
             <a href="mailto:gabvoissiere.pro@yahoo.com">gabvoissiere.pro@yahoo.com</a>
             <a href="tel:0695901310">06 95 90 13 10</a>
         </div>
@@ -32,7 +32,7 @@
 </script>
 
 <style lang="scss" scoped>
-    #global {
+    #contacts {
         width: 100%;
         background-color: #565758;
         color: white;
@@ -55,7 +55,7 @@
             margin: 2vh 0;
         }
 
-        #contacts {
+        #contact {
             width: 35%;
             margin: 4vh 0;
             border-top: 2px solid #E6332A;

@@ -14,11 +14,11 @@
     <!-- navigation -->
     <nav>
       <ul>
-        <li>accueil</li>
-        <li>a propos</li>
-        <li>mes services</li>
-        <li>portfolio</li>
-        <li>contactez moi</li>
+        <li><a href="">accueil</a></li>
+        <li><a href="">a propos</a></li>
+        <li><a href="#services">mes services</a></li>
+        <li><a href="">portfolio</a></li>
+        <li><a id="modifier" href="#contacts">contactez moi</a></li>
       </ul>
     </nav>
   </header>
@@ -74,13 +74,12 @@
       display: flex;
       height: 100%;
       align-items: center;
-        animation: title ease-in-out 2000ms;
+      // animation: title ease-in-out 2000ms 4000ms both;
 
       img {
         height: 80%;
         margin-left: 4vh;
         z-index: 999;
-        // animation: logo ease-in-out 2000ms 1000ms both;
       }
 
       #name-job {
@@ -96,7 +95,7 @@
     nav {
       width: 40%;
       margin-right: 4vh;
-      animation: navigation ease-in-out 2000ms 500ms both;
+      // animation: navigation ease-in-out 2000ms 4500ms both;
 
       ul {
         display: flex;
@@ -108,7 +107,12 @@
           text-transform: uppercase;
           font-size: 0.75rem;
 
-          &:last-child {
+          a {
+          text-decoration: none;
+          color: black;
+          }
+
+          #modifier:last-child {
             color: #E6332A;
             font-weight: 700;
           }

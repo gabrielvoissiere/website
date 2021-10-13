@@ -1,7 +1,7 @@
 <template>
-    <section id="global">
+    <section id="services">
         <h2>Mes services</h2>
-        <section id="services">
+        <section id="service">
             <article v-for="data in services" :key="data">
                 <img :src="require(`@/assets/${data.imgUrl}`)" :alt="data.altImg">
                 <h3>{{ data.name }}</h3>
@@ -21,42 +21,43 @@
         data() {
             return {
                 services: [{
-                    name: "Développement web",
-                    sumup: "Développement de votre projet en assurent sa lisibilité sur tablette et mobile. Nous échangeons ensemble et en direct durant son développement et vous pouvez voir son avancement à tout moment",
-                    imgUrl: "devweb.jpg",
-                    altImg: "Développement web"
-                },
-                {
-                    name: "intégration de maquettes",
-                    sumup: "Je m'occupe de l'intégration de votre maquette web desktop/mobile en utilisant les technologie moderne comme le HTML5, le CSS3 et le JavaScript ES6+. le Framework Vue JS peu aussi être utiliser pour l'intégration",
-                    imgUrl: "maquette.jpg",
-                    altImg: "intégration de maquettes"
-                },
-                {
-                    name: "responsive design",
-                    sumup: "Ajout ou amélioration du responsive sur un site web déjà existant / adaptation d'un site web à la vue tablette et mobile pour une maximum de visibilité et un référencement naturel amélioré",
-                    imgUrl: "responsive.jpg",
-                    altImg: "responsive design"
-                },
-                {
-                    name: "site vitrine / one page",
-                    sumup: "Création de site vitrine et site one page avec adaptation tablette et mobile, structure de page optimiser pour le référencement naturel. Idéal pour se faire connaitre et/ou exposer ses produits/services à de potentiel client",
-                    imgUrl: "onepage.jpg",
-                    altImg: "site vitrine / one page"
-                },
-                {
-                    name: "intervention scolaire",
-                    sumup: "Intervention dans les écoles pour mettre en place des ateliers de découverte du développement web en s'amusant. Mise en place de cours d'initiation au développement web au collège et au lycée ",
-                    imgUrl: "intervention.jpg",
-                    altImg: "intervention scolaire"
-                }]
+                        name: "Développement web",
+                        sumup: "Développement de votre projet en assurent sa lisibilité sur tablette et mobile. Nous échangeons ensemble et en direct durant son développement et vous pouvez voir son avancement à tout moment",
+                        imgUrl: "devweb-min.webp",
+                        altImg: "Développement web"
+                    },
+                    {
+                        name: "intégration de maquettes",
+                        sumup: "Je m'occupe de l'intégration de votre maquette web desktop/mobile en utilisant les technologie moderne comme le HTML5, le CSS3 et le JavaScript ES6+. le Framework Vue JS peu aussi être utiliser pour l'intégration",
+                        imgUrl: "maquette-min.webp",
+                        altImg: "intégration de maquettes"
+                    },
+                    {
+                        name: "responsive design",
+                        sumup: "Ajout ou amélioration du responsive sur un site web déjà existant / adaptation d'un site web à la vue tablette et mobile pour une maximum de visibilité et un référencement naturel amélioré",
+                        imgUrl: "responsive-min.webp",
+                        altImg: "responsive design"
+                    },
+                    {
+                        name: "site vitrine / one page",
+                        sumup: "Création de site vitrine et site one page avec adaptation tablette et mobile, structure de page optimiser pour le référencement naturel. Idéal pour se faire connaitre et/ou exposer ses produits/services à de potentiel client ",
+                        imgUrl: "onepage-min.webp",
+                        altImg: "site vitrine / one page"
+                    },
+                    {
+                        name: "intervention scolaire",
+                        sumup: "Intervention dans les écoles pour mettre en place des ateliers de découverte du développement web en s'amusant. Mise en place de cours d'initiation au développement web au collège et au lycée ",
+                        imgUrl: "intervention-min.webp",
+                        altImg: "intervention scolaire"
+                    }
+                ]
             }
         },
     }
 </script>
 
 <style lang="scss" scoped>
-    #global {
+    #services {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -68,7 +69,7 @@
             text-transform: uppercase;
         }
 
-        #services {
+        #service {
             width: 95vw;
             display: grid;
             grid-template-rows: repeat(auto, 1fr);
@@ -84,12 +85,19 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                overflow: hidden;
+
+                &:hover > img {
+                    opacity: 80%;
+                    height: 45%;
+                }
 
                 img {
                     width: 100%;
                     height: 50%;
                     object-fit: cover;
                     border-radius: 10px 10px 0 0;
+                    transition: 300ms ease-in-out;
                 }
 
                 h3,
