@@ -81,18 +81,19 @@
             }
 
             article:first-child {
-                background-image: url("../assets/hero-background.jpg");
+                background-image: url("../assets/preparation.jpg");
                 background-size: cover;
+                background-position: center center;
             }
 
             article:nth-child(2) {
                 width: 34vw;
-                background-image: url("../assets/hero-background.jpg");
+                background-image: url("../assets/developpement.jpg");
                 background-size: cover;
             }
 
             article:last-child {
-                background-image: url("../assets/hero-background.jpg");
+                background-image: url("../assets/rendu.jpg");
                 background-size: cover;
             }
 

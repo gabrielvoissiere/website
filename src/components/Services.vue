@@ -23,31 +23,31 @@
                 services: [{
                     name: "Développement web",
                     sumup: "Développement de votre projet en assurent sa lisibilité sur tablette et mobile. Nous échangeons ensemble et en direct durant son développement et vous pouvez voir son avancement à tout moment",
-                    imgUrl: "hero-background.jpg",
+                    imgUrl: "devweb.jpg",
                     altImg: "Développement web"
                 },
                 {
                     name: "intégration de maquettes",
                     sumup: "Je m'occupe de l'intégration de votre maquette web desktop/mobile en utilisant les technologie moderne comme le HTML5, le CSS3 et le JavaScript ES6+. le Framework Vue JS peu aussi être utiliser pour l'intégration",
-                    imgUrl: "hero-background.jpg",
+                    imgUrl: "maquette.jpg",
                     altImg: "intégration de maquettes"
                 },
                 {
                     name: "responsive design",
                     sumup: "Ajout ou amélioration du responsive sur un site web déjà existant / adaptation d'un site web à la vue tablette et mobile pour une maximum de visibilité et un référencement naturel amélioré",
-                    imgUrl: "hero-background.jpg",
+                    imgUrl: "responsive.jpg",
                     altImg: "responsive design"
                 },
                 {
                     name: "site vitrine / one page",
                     sumup: "Création de site vitrine et site one page avec adaptation tablette et mobile, structure de page optimiser pour le référencement naturel. Idéal pour se faire connaitre et/ou exposer ses produits/services à de potentiel client",
-                    imgUrl: "hero-background.jpg",
+                    imgUrl: "onepage.jpg",
                     altImg: "site vitrine / one page"
                 },
                 {
                     name: "intervention scolaire",
                     sumup: "Intervention dans les écoles pour mettre en place des ateliers de découverte du développement web en s'amusant. Mise en place de cours d'initiation au développement web au collège et au lycée ",
-                    imgUrl: "hero-background.jpg",
+                    imgUrl: "intervention.jpg",
                     altImg: "intervention scolaire"
                 }]
             }
