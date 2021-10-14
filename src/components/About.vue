@@ -60,6 +60,9 @@
             align-self: flex-start;
             margin-bottom: 15vh;
             margin-left: 10vw;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
 
             h2 {
                 font-size: 2.25rem;
