@@ -90,7 +90,7 @@
                 overflow: hidden;
 
                 &:hover>img {
-                    opacity: 80%;
+                    opacity: 0.8;
                     height: 45%;
                 }
 

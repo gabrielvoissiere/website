@@ -102,7 +102,7 @@
                 width: 100%;
                 height: 100%;
                 background-color: black;
-                opacity: 50%;
+                opacity: 0.5;
             }
         }
     }
