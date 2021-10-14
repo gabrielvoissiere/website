@@ -4,8 +4,10 @@
         <section id="service">
             <article v-for="data in services" :key="data">
                 <img :src="require(`@/assets/${data.imgUrl}`)" :alt="data.altImg">
-                <h3>{{ data.name }}</h3>
-                <p>{{ data.sumup }}</p>
+                <div id="text">
+                    <h3>{{ data.name }}</h3>
+                    <p>{{ data.sumup }}</p>
+                </div>
             </article>
             <div id="blank">
                 <div id="filter"></div>
@@ -87,7 +89,7 @@
                 align-items: center;
                 overflow: hidden;
 
-                &:hover > img {
+                &:hover>img {
                     opacity: 80%;
                     height: 45%;
                 }
@@ -100,14 +102,21 @@
                     transition: 300ms ease-in-out;
                 }
 
-                h3,
-                p {
+                #text {
                     width: 90%;
-                    margin-top: 4vh;
-                }
+                    height: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
 
-                h3 {
-                    text-transform: uppercase;
+                    h3 {
+                        text-transform: uppercase;
+                        font-size: 2.25rem;
+                    }
+
+                    p {
+                        margin-top: 2vh;
+                    }
                 }
             }
 
