@@ -1,5 +1,8 @@
 <template>
     <section id="contacts">
+        <!-- particles.js container -->
+        <div id="particles-js-contact"></div>
+
         <p>Me contacter</p>
         <h2>développeur web freelance</h2>
         <p>
@@ -32,6 +35,13 @@
 </script>
 
 <style lang="scss" scoped>
+    #particles-js-contact {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
     #contacts {
         width: 100%;
         background-color: #565758;
@@ -40,6 +50,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: relative;
+
+        h2,p,form,a {
+            z-index: 999;
+        }
 
         p:first-child {
             font-size: 1.25rem;

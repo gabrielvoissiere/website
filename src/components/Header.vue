@@ -14,8 +14,8 @@
     <!-- navigation -->
     <nav>
       <ul>
-        <li><a href="">accueil</a></li>
-        <li><a href="">a propos</a></li>
+        <li><a href="#">accueil</a></li>
+        <li><a href="#about">a propos</a></li>
         <li><a href="#services">mes services</a></li>
         <li><a href="">portfolio</a></li>
         <li><a id="modifier" href="#contacts">contactez moi</a></li>

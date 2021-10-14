@@ -1,0 +1,83 @@
+<template>
+    <section id="about">
+        <!-- particles.js container -->
+        <div id="particles-js"></div>
+
+        <div id="title">
+            <h2>qui suis-je ?</h2>
+            <p>
+                Gabriel Voissiere, étudiant à l'ECV digital
+                à Aix en Provence, je donne vie à vos
+                projet en tant que développeur freelance
+            </p>
+        </div>
+        <p id="story">
+            Dans le développement web depuis 2016, je suis passé
+            freelance en 2021. Je mets tout en œuvre pour vous fournir
+            un travail de qualité et adapté aux besoins de votre projet.
+            <br><br>
+            Mes compétences en développement web vont du site
+            one-page au site e-commerce en passant par l'intégration
+            de webdesign et la préparation de page pour un travail
+            de référencement.
+        </p>
+    </section>
+</template>
+
+<script>
+    export default {
+        name: "About"
+    }
+</script>
+
+<style lang="scss" scoped>
+    #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    #about {
+        width: 100vw;
+        height: 100vh;
+        background-color: #303132;
+        position: relative;
+        text-align: left;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+
+        h2,p {
+            z-index: 999;
+        }
+
+
+        #title {
+            width: 20%;
+            align-self: flex-start;
+            margin-bottom: 15vh;
+            margin-left: 10vw;
+
+            h2 {
+                font-size: 2.25rem;
+                text-transform: uppercase;
+                border-bottom: 2px solid #E6332A;
+                margin-bottom: 4vh;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+        }
+
+        #story {
+            width: 30%;
+            align-self: flex-end;
+            margin-right: 10vw;
+            font-size: 1.5rem;
+        }
+    }
+</style>

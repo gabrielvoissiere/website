@@ -2,6 +2,7 @@
   <div class="home">
     <Header/>
     <Hero />
+    <About />
     <Services />
     <Steps />
     <Numbers />
@@ -13,6 +14,7 @@
 <script>
 import Header from '@/components/Header.vue'
 import Hero from '@/components/Hero.vue'
+import About from '@/components/About.vue'
 import Services from '@/components/Services.vue'
 import Steps from '@/components/Steps.vue'
 import Numbers from '@/components/Numbers.vue'
@@ -24,6 +26,7 @@ export default {
   components: {
     Header,
     Hero,
+    About,
     Services,
     Steps,
     Numbers,
