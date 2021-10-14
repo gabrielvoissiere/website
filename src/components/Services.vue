@@ -131,7 +131,7 @@
                     height: 100%;
                     border-radius: 10px;
                     background-color: #000000;
-                    opacity: 50%;
+                    opacity: 0.5;
                     position: absolute;
                     top: 0;
                 }
