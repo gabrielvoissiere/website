@@ -44,11 +44,12 @@
 
     #contacts {
         width: 100%;
+        height: 100vh;
         background-color: #303132;
         color: white;
-        padding: 8vh 0;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         position: relative;
 
@@ -66,7 +67,7 @@
         }
 
         h2+p {
-            width: 60%;
+            width: 35%;
             margin: 2vh 0;
         }
 
@@ -87,9 +88,11 @@
         }
 
         form {
-            width: 50%;
+            width: 35%;
             display: flex;
             flex-direction: column;
+            caret-color: #E6332A;
+
 
             label {
                 text-align: left;

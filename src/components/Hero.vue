@@ -73,7 +73,7 @@
                 }
 
                 50% {
-                    border-color: white;
+                    border-color: #E6332A;
                 }
             }
 
@@ -85,7 +85,7 @@
                 letter-spacing: 2px;
                 animation: typing 4s steps(35, end) both, blink 1100ms step-end infinite;
                 white-space: nowrap;
-                border-right: 4px solid white;
+                border-right: 4px solid #E6332A;
                 box-sizing: border-box;
             }
 
