@@ -11,7 +11,7 @@
             </article>
             <div id="blank">
                 <div id="filter"></div>
-                <img src="../assets/nothing.png" alt="">
+                <img src="../assets/nothing.webp" alt="">
             </div>
         </section>
     </section>
@@ -49,7 +49,7 @@
                     {
                         name: "intervention scolaire",
                         sumup: "Intervention dans les écoles pour mettre en place des ateliers de découverte du développement web en s'amusant. Mise en place de cours d'initiation au développement web au collège et au lycée ",
-                        imgUrl: "intervention-min.webp",
+                        imgUrl: "intervention.webp",
                         altImg: "intervention scolaire"
                     }
                 ]

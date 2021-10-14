@@ -32,37 +32,6 @@
 
 <style lang="scss" scoped>
 
-@keyframes logo {
-  from {
-    transform: rotateZ(0deg) scale(0);
-  }
-  to {
-    transform: rotateZ(360deg) scale(1);
-  }
-}
-
-@keyframes title {
-  from {
-    transform: translateX(-50%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes navigation {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
   header {
     width: 100vw;
     height: 10vh;
@@ -74,10 +43,10 @@
       display: flex;
       height: 100%;
       align-items: center;
-      // animation: title ease-in-out 2000ms 4000ms both;
 
       img {
         height: 80%;
+        width: auto;
         margin-left: 4vh;
         z-index: 999;
       }
@@ -95,7 +64,6 @@
     nav {
       width: 40%;
       margin-right: 4vh;
-      // animation: navigation ease-in-out 2000ms 4500ms both;
 
       ul {
         display: flex;
