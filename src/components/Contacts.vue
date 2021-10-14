@@ -44,7 +44,7 @@
 
     #contacts {
         width: 100%;
-        background-color: #565758;
+        background-color: #303132;
         color: white;
         padding: 8vh 0;
         display: flex;

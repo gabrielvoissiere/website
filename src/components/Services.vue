@@ -63,6 +63,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-color: white;
 
         h2 {
             border-bottom: 2px solid #E6332A;
@@ -88,6 +89,7 @@
                 flex-direction: column;
                 align-items: center;
                 overflow: hidden;
+                background-color: whitesmoke;
 
                 &:hover>img {
                     opacity: 0.8;
