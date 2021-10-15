@@ -21,7 +21,7 @@
         <form>
             <label for="name">Nom & Prénom</label>
             <input type="text" v-model="name" id="name">
-            <label for="email">Email</label>
+            <label for="email" id="emailLabel">Email</label>
             <input type="email" name="email" id="email" v-model="email">
             <label for="message">Message</label>
             <textarea name="message" id="message" cols="30" rows="10" v-model="message"></textarea>
@@ -61,15 +61,22 @@
                         email.classList.remove("formError")
                         message.classList.remove("formError")
                     }, 2000);
-                } else if (testMail.test(this.email)) {
+                } else if (testMail.test(this.email) ==  false) {
+                    let emailLabel = document.getElementById("emailLabel")
                     let email = document.getElementById("email")
                     let sendBtn = document.getElementById("sendBtn")
+
+                    emailLabel.innerHTML = "Email (veuillez rentrer une adresse email valide)"
+                    emailLabel.style.color = "#E6332A"
                     email.classList.add("formError")
                     sendBtn.classList.add("error")
+
                     setTimeout(() => {
+                        emailLabel.innerHTML = "Email"
+                        emailLabel.style.color = "white"
                         email.classList.remove("formError")
                         sendBtn.classList.remove("error")
-                    }, 2000);
+                    }, 4000);
                 } else {
                     let templateParams = {
                         email: this.email,
@@ -188,6 +195,7 @@
 
                 &.formError {
                     border: 2px solid #E6332A;
+                    color: #E6332A;
                 }
             }
 
