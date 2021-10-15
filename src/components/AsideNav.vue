@@ -51,6 +51,10 @@
         align-items: center;
         justify-content: space-between;
 
+                @media screen and (max-width: 475px) {
+                    display: none;
+                }
+
         ul {
             text-align: left;
             list-style-type: none;

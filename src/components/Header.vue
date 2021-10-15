@@ -82,8 +82,7 @@
       margin-right: 4vh;
 
     @media screen and (max-width: 475px){
-      width: 100%;
-      margin: 0;
+      display: none;
     }
 
       ul {
