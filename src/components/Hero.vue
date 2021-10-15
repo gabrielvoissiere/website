@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="hero">
         <!-- black filter -->
         <div id="filter-hero"></div>
 
@@ -27,7 +27,7 @@
 </script>
 
 <style lang="scss" scoped>
-    section {
+    #hero {
         width: 100vw;
         height: 90vh;
         background-image: url("../assets/hero-background-min.webp");
@@ -136,7 +136,7 @@
                     top: 0;
                     background-color: black;
                     border-radius: 10px;
-                    opacity: 50%;
+                    opacity: 0.5;
                     width: 100%;
                     height: 100%;
                 }

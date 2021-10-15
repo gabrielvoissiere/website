@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <AsideNav />
     <Header/>
     <Hero />
     <About />
@@ -12,6 +13,7 @@
 </template>
 
 <script>
+import AsideNav from '@/components/AsideNav.vue'
 import Header from '@/components/Header.vue'
 import Hero from '@/components/Hero.vue'
 import About from '@/components/About.vue'
@@ -24,6 +26,7 @@ import Footer from '@/components/Footer.vue'
 export default {
   name: 'Home',
   components: {
+    AsideNav,
     Header,
     Hero,
     About,

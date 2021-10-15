@@ -19,18 +19,91 @@
         </div>
 
         <form>
+            <label for="name">Nom & Prénom</label>
+            <input type="text" v-model="name" id="name">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" v-model="email">
             <label for="message">Message</label>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-            <input type="submit" value="Envoyer">
+            <textarea name="message" id="message" cols="30" rows="10" v-model="message"></textarea>
+            <p id="sendBtn" @click="sendMsg()">Envoyer</p>
         </form>
     </section>
 </template>
 
 <script>
     export default {
-        name: "Contacts"
+        name: "Contacts",
+        data() {
+            return {
+                email: "",
+                message: "",
+                name: ""
+            }
+        },
+        methods: {
+            sendMsg() {
+                const testMail = /[A-Z0-9._%+-]+@[A-Z0-9-]+[.]+[A-Z]{2,3}/i
+
+                if (this.email == "" || this.message == "" || this.name == "") {
+                    let sendBtn = document.getElementById("sendBtn")
+                    let name = document.getElementById("name")
+                    let email = document.getElementById("email")
+                    let message = document.getElementById("message")
+
+                    sendBtn.classList.add("error")
+                    name.classList.add("formError")
+                    email.classList.add("formError")
+                    message.classList.add("formError")
+
+                    setTimeout(() => {
+                        sendBtn.classList.remove("error")
+                        name.classList.remove("formError")
+                        email.classList.remove("formError")
+                        message.classList.remove("formError")
+                    }, 2000);
+                } else if (testMail.test(this.email)) {
+                    let email = document.getElementById("email")
+                    let sendBtn = document.getElementById("sendBtn")
+                    email.classList.add("formError")
+                    sendBtn.classList.add("error")
+                    setTimeout(() => {
+                        email.classList.remove("formError")
+                        sendBtn.classList.remove("error")
+                    }, 2000);
+                } else {
+                    let templateParams = {
+                        email: this.email,
+                        message: this.message,
+                        name: this.name
+                    }
+
+                    const emailjs = require("emailjs-com")
+                    emailjs.send("gmailGaby", "gmailTemplate", templateParams)
+                        .then(function (response) {
+                            console.log('SUCCESS!', response.status, response.text);
+                            if (response.status == 200 && response.text == "OK") {
+                                let sendBtn = document.getElementById("sendBtn")
+                                sendBtn.style.backgroundColor = "green"
+                                sendBtn.innerHTML = "Message envoyé !"
+                                setTimeout(() => {
+                                    sendBtn.style.backgroundColor = "#E6332A"
+                                    sendBtn.innerHTML = "Envoyer"
+                                }, 2000);
+                            }
+                        }, function (error) {
+                            console.log('FAILED...', error);
+                        });
+
+                    this.email = ""
+                    this.message = ""
+                    this.name = ""
+                }
+            }
+        },
+        mounted() {
+            const emailjs = require("emailjs-com")
+            emailjs.init("user_BIcodPXtKwsVI2FpBC9fP")
+        }
     }
 </script>
 
@@ -53,7 +126,10 @@
         align-items: center;
         position: relative;
 
-        h2,p,form,a {
+        h2,
+        p,
+        form,
+        a {
             z-index: 999;
         }
 
@@ -99,26 +175,54 @@
                 margin-bottom: 0.5vh;
             }
 
-            input + label {
+            input+label {
                 margin-top: 2vh;
             }
 
-            input, textarea {
+            input,
+            textarea {
                 border-radius: 10px;
                 border: none;
                 padding: 2vh;
                 outline: none;
+
+                &.formError {
+                    border: 2px solid #E6332A;
+                }
             }
 
-            input[type=submit] {
+            @keyframes formError {
+                0% {
+                    transform: translateX(5%);
+                }
+
+                50% {
+                    transform: translateX(-5%);
+                }
+
+                100% {
+                    transform: translateX(5%);
+                }
+            }
+
+            p {
                 margin-top: 4vh;
+                padding: 1vh 0;
                 width: 30%;
                 background-color: #E6332A;
                 color: white;
                 font-weight: 700;
+                border: none;
+                border-radius: 10px;
+                transition: 500ms ease-in-out;
 
                 &:hover {
                     cursor: pointer;
+                }
+
+                &.error {
+                    background-color: red;
+                    animation: formError 100ms alternate;
                 }
             }
         }

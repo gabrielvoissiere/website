@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header id="header">
     <!-- title block -->
     <div id="title">
       <!-- logo du site -->
