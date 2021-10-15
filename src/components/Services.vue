@@ -80,6 +80,10 @@
             gap: 5vh;
             margin: 4vh 0;
 
+            @media screen and (max-width: 475px) {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
             article {
                 height: 60vh;
                 border-radius: 10px;

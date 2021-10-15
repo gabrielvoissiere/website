@@ -133,6 +133,11 @@
         align-items: center;
         position: relative;
 
+                @media screen and (max-width: 475px) {
+                    height: auto;
+                    padding: 4vh 0;
+                }
+
         h2,
         p,
         form,
@@ -152,6 +157,14 @@
         h2+p {
             width: 35%;
             margin: 2vh 0;
+
+            @media screen and (min-width: 475px) and (max-width: 1030px) {
+                width: 50%;
+            }
+
+                @media screen and (max-width: 475px) {
+                    width: 95vw;
+                }
         }
 
         #contact {
@@ -162,6 +175,14 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+            @media screen and (min-width: 475px) and (max-width: 1030px) {
+                width: 50%;
+            }
+
+                @media screen and (max-width: 475px) {
+                    width: 95vw;
+                }
 
             a {
                 padding: 1vh;
@@ -175,6 +196,14 @@
             display: flex;
             flex-direction: column;
             caret-color: #E6332A;
+
+            @media screen and (min-width: 475px) and (max-width: 1030px) {
+                width: 50%;
+            }
+
+                @media screen and (max-width: 475px) {
+                    width: 95vw;
+                }
 
 
             label {

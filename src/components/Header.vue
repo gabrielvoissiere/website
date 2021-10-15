@@ -31,7 +31,6 @@
 </script>
 
 <style lang="scss" scoped>
-
   header {
     width: 100vw;
     height: 10vh;
@@ -39,21 +38,38 @@
     justify-content: space-between;
     align-items: center;
 
+    @media screen and (max-width: 475px) {
+      flex-direction: column;
+      height: 10vh;
+    }
+
     #title {
       display: flex;
       height: 100%;
       align-items: center;
+
+    @media screen and (max-width: 475px){
+      justify-content: space-between;
+    }
 
       img {
         height: 80%;
         width: auto;
         margin-left: 4vh;
         z-index: 999;
+
+        @media screen and (max-width: 475px) {
+          display: none;
+        }
       }
 
       #name-job {
         text-align: left;
         margin-left: 4vh;
+
+    @media screen and (max-width: 475px){
+      margin: 2vh;
+    }
 
         h1 {
           font-size: 1.5rem;
@@ -65,19 +81,28 @@
       width: 40%;
       margin-right: 4vh;
 
+    @media screen and (max-width: 475px){
+      width: 100%;
+      margin: 0;
+    }
+
       ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
         list-style-type: none;
 
+    @media screen and (max-width: 475px){
+      padding: 0;
+    }
+
         li {
           text-transform: uppercase;
           font-size: 0.75rem;
 
           a {
-          text-decoration: none;
-          color: black;
+            text-decoration: none;
+            color: black;
           }
 
           #modifier:last-child {

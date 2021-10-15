@@ -50,7 +50,8 @@
         justify-content: center;
         z-index: 999;
 
-        h2,p {
+        h2,
+        p {
             z-index: 999;
         }
 
@@ -64,6 +65,18 @@
             flex-direction: column;
             align-items: flex-start;
 
+            @media screen and (min-width: 475px) and (max-width: 1030px) {
+                width: 50%;
+            }
+
+            @media screen and (max-width: 475px) {
+                width: 100%;
+                align-items: center;
+                text-align: center;
+                margin-bottom: 5vh;
+                margin-left: 0;
+            }
+
             h2 {
                 font-size: 2.25rem;
                 text-transform: uppercase;
@@ -73,6 +86,10 @@
 
             p {
                 font-size: 1.5rem;
+
+                @media screen and (max-width: 475px) {
+                    width: 90%;
+                }
             }
         }
 
@@ -81,6 +98,16 @@
             align-self: flex-end;
             margin-right: 10vw;
             font-size: 1.5rem;
+
+            @media screen and (min-width: 475px) and (max-width: 1030px) {
+                width: 50%;
+            }
+
+            @media screen and (max-width: 475px) {
+                width: 90%;
+                align-self: center;margin: 0;
+                text-align: center;
+            }
         }
     }
 </style>

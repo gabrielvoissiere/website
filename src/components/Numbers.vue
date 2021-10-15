@@ -50,6 +50,11 @@
             align-items: center;
             justify-content: space-around;
 
+            @media screen and (max-width: 475px) {
+                flex-direction: column;
+                margin-top: 4vh;
+            }
+
             div {
                 width: 28%;
                 background-color: red;
@@ -60,6 +65,11 @@
                 justify-content: space-around;
                 margin-bottom: 4vh;
                 color: white;
+
+                @media screen and (max-width: 475px) {
+                    width: 100vw;
+                    margin-bottom: 2vh;
+                }
 
                 p:last-child {
                     font-size: 2rem;

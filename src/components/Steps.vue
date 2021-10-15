@@ -44,12 +44,21 @@
             border-bottom: 2px solid #E6332A;
             margin-top: 4vh;
             text-transform: uppercase;
+
+                @media screen and (max-width: 475px) {
+                    font-size: 1.5rem;
+                    padding-bottom: 2vh;
+                }
         }
 
         #steps {
             width: 100%;
             display: flex;
             justify-content: space-between;
+
+                @media screen and (max-width: 475px) {
+                    flex-direction: column;
+                }
 
             article {
                 position: relative;
@@ -61,6 +70,12 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+
+                @media screen and (max-width: 475px) {
+                    width: 100vw;
+                    height: 20vh;
+                    margin-top: 2vh;
+                }
 
                 h3,p {
                     color: white;
@@ -84,12 +99,21 @@
                 background-image: url("../assets/preparation-min.webp");
                 background-size: cover;
                 background-position: center center;
+
+                @media screen and (max-width: 475px) {
+                    margin-top: 4vh;
+                }
             }
 
             article:nth-child(2) {
                 width: 34vw;
                 background-image: url("../assets/developpement-min.webp");
                 background-size: cover;
+
+                @media screen and (max-width: 475px) {
+                    width: 100vw;
+                    height: 20vh;
+                }
             }
 
             article:last-child {

@@ -41,6 +41,10 @@
         justify-content: center;
         color: white;
 
+    @media screen and (max-width: 475px){
+      height: 90vh;
+    }
+
         #filter-hero {
             width: 100%;
             height: 100%;
@@ -55,6 +59,12 @@
         }
 
         #title {
+            @media screen and (max-width: 475px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
             @keyframes typing {
                 from {
                     width: 0%;
@@ -87,6 +97,15 @@
                 white-space: nowrap;
                 border-right: 4px solid #E6332A;
                 box-sizing: border-box;
+
+                @media screen and (max-width: 475px) {
+                    animation: none;
+                    border: none;
+                    overflow: initial;
+                    white-space: initial;
+                    width: 95%;
+                    margin-bottom: 2vh;
+                }
             }
 
             p {
@@ -102,6 +121,11 @@
             align-items: center;
             position: relative;
 
+            @media screen and (max-width: 475px) {
+                flex-direction: column;
+                width: 100%;
+            }
+
             a,
             #filter-link {
                 width: 40%;
@@ -111,6 +135,10 @@
                 color: white;
                 text-decoration: none;
                 transition: 250ms ease-in-out;
+
+                @media screen and (max-width: 475px) {
+                    width: 80%;
+                }
 
                 &:hover {
                     transform: scale(1.10);
