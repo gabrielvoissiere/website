@@ -61,7 +61,7 @@
                         email.classList.remove("formError")
                         message.classList.remove("formError")
                     }, 2000);
-                } else if (testMail.test(this.email) ==  false) {
+                } else if (testMail.test(this.email) == false) {
                     let emailLabel = document.getElementById("emailLabel")
                     let email = document.getElementById("email")
                     let sendBtn = document.getElementById("sendBtn")
@@ -133,10 +133,14 @@
         align-items: center;
         position: relative;
 
-                @media screen and (max-width: 475px) {
-                    height: auto;
-                    padding: 4vh 0;
-                }
+        @media screen and (min-width: 1030px) and (max-width: 1280px) {
+            justify-content: initial;
+        }
+
+        @media screen and (max-width: 475px) {
+            height: auto;
+            padding: 4vh 0;
+        }
 
         h2,
         p,
@@ -158,13 +162,17 @@
             width: 35%;
             margin: 2vh 0;
 
+        @media screen and (min-width: 1030px) and (max-width: 1280px) {
+            width: 50%;
+        }
+
             @media screen and (min-width: 475px) and (max-width: 1030px) {
                 width: 50%;
             }
 
-                @media screen and (max-width: 475px) {
-                    width: 95vw;
-                }
+            @media screen and (max-width: 475px) {
+                width: 95vw;
+            }
         }
 
         #contact {
@@ -176,13 +184,17 @@
             align-items: center;
             justify-content: space-between;
 
+        @media screen and (min-width: 1030px) and (max-width: 1280px) {
+            width: 50%;
+        }
+
             @media screen and (min-width: 475px) and (max-width: 1030px) {
                 width: 50%;
             }
 
-                @media screen and (max-width: 475px) {
-                    width: 95vw;
-                }
+            @media screen and (max-width: 475px) {
+                width: 95vw;
+            }
 
             a {
                 padding: 1vh;
@@ -197,13 +209,18 @@
             flex-direction: column;
             caret-color: #E6332A;
 
+        @media screen and (min-width: 1030px) and (max-width: 1280px) {
+            width: 50%;
+            margin-top: 2vh;
+        }
+
             @media screen and (min-width: 475px) and (max-width: 1030px) {
                 width: 50%;
             }
 
-                @media screen and (max-width: 475px) {
-                    width: 95vw;
-                }
+            @media screen and (max-width: 475px) {
+                width: 95vw;
+            }
 
 
             label {
@@ -227,6 +244,14 @@
                     color: #E6332A;
                 }
             }
+
+            
+
+        @media screen and (min-width: 1030px) and (max-width: 1280px) {
+            textarea {
+                height: 15%;
+            }
+        }
 
             @keyframes formError {
                 0% {

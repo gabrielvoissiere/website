@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <AsideNav />
+    <!-- <AsideNav /> -->
     <Header/>
     <Hero />
     <About />
@@ -9,11 +9,12 @@
     <Numbers />
     <Contacts />
     <Footer />
+    <UpArrow />
   </div>
 </template>
 
 <script>
-import AsideNav from '@/components/AsideNav.vue'
+// import AsideNav from '@/components/AsideNav.vue'
 import Header from '@/components/Header.vue'
 import Hero from '@/components/Hero.vue'
 import About from '@/components/About.vue'
@@ -22,11 +23,12 @@ import Steps from '@/components/Steps.vue'
 import Numbers from '@/components/Numbers.vue'
 import Contacts from '@/components/Contacts.vue'
 import Footer from '@/components/Footer.vue'
+import UpArrow from '@/components/UpArrow.vue'
 
 export default {
   name: 'Home',
   components: {
-    AsideNav,
+    // AsideNav,
     Header,
     Hero,
     About,
@@ -34,7 +36,12 @@ export default {
     Steps,
     Numbers,
     Contacts,
-    Footer
-  }
+    Footer,
+    UpArrow
+  },
+  mounted() {
+    console.log(window.innerWidth)
+    console.log(window.innerHeight)
+  },
 }
 </script>

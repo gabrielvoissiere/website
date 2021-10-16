@@ -50,6 +50,11 @@
         justify-content: center;
         z-index: 999;
 
+            @media screen and (min-width: 1030px) and (max-width: 1280px) {
+                height: auto;
+                padding: 5vh 0;
+            }
+
         h2,
         p {
             z-index: 999;
