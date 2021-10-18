@@ -10,6 +10,7 @@
     <Contacts />
     <Footer />
     <UpArrow />
+    <!-- <Loader /> -->
   </div>
 </template>
 
@@ -24,6 +25,8 @@ import Numbers from '@/components/Numbers.vue'
 import Contacts from '@/components/Contacts.vue'
 import Footer from '@/components/Footer.vue'
 import UpArrow from '@/components/UpArrow.vue'
+// import Loader from '@/components/Loader.vue'
+
 
 export default {
   name: 'Home',
@@ -37,7 +40,8 @@ export default {
     Numbers,
     Contacts,
     Footer,
-    UpArrow
+    UpArrow,
+    // Loader
   },
   mounted() {
     console.log(window.innerWidth)

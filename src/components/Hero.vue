@@ -88,12 +88,13 @@
             }
 
             h2 {
+                // ajouter animation delay a 5000ms si loader activer, sinon 2200ms
                 text-transform: uppercase;
                 font-size: 2.5rem;
 
                 overflow: hidden;
                 letter-spacing: 2px;
-                animation: typing 4s steps(35, end) both, blink 1100ms step-end infinite;
+                animation: typing 4s 2200ms steps(35, end) both, blink 1100ms step-end infinite;
                 white-space: nowrap;
                 border-right: 4px solid #E6332A;
                 box-sizing: border-box;
