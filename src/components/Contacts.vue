@@ -2,22 +2,23 @@
     <section id="contacts">
         <!-- particles.js container -->
         <div id="particles-js-contact"></div>
+        <div id="block">
+            <p>Me contacter</p>
+            <h2>développeur web freelance</h2>
+            <p>
+                Je travail sur place à Aix en Provence et en distanciel sur toute la France
+                <br>
+                <br>
+                Pour une demande de devis pour votre projet ou une question sur ce dernier, vous pouvez me contacter par
+                le
+                formulaire ou directement par mail ou téléphone.
+            </p>
 
-        <p>Me contacter</p>
-        <h2>développeur web freelance</h2>
-        <p>
-            Je travail sur place à Aix en Provence et en distanciel sur toute la France
-            <br>
-            <br>
-            Pour une demande de devis pour votre projet ou une question sur ce dernier, vous pouvez me contacter par le
-            formulaire ou directement par mail ou téléphone.
-        </p>
-
-        <div id="contact">
-            <a href="mailto:gabvoissiere.pro@yahoo.com">gabvoissiere.pro@yahoo.com</a>
-            <a href="tel:0695901310">06 95 90 13 10</a>
+            <div id="contact">
+                <a href="mailto:gabvoissiere.pro@yahoo.com">gabvoissiere.pro@yahoo.com</a>
+                <a href="tel:0695901310">06 95 90 13 10</a>
+            </div>
         </div>
-
         <form>
             <label for="name">Nom & Prénom</label>
             <input type="text" v-model="name" id="name">
@@ -134,7 +135,8 @@
         position: relative;
 
         @media screen and (min-width: 1030px) and (max-width: 1280px) {
-            justify-content: initial;
+            flex-direction: row;
+            justify-content: space-around;
         }
 
         @media screen and (max-width: 475px) {
@@ -149,7 +151,17 @@
             z-index: 999;
         }
 
-        p:first-child {
+        #block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+
+            @media screen and (min-width: 1030px) and (max-width: 1280px) {
+                width: 40%;
+            }
+
+            p:first-child {
             font-size: 1.25rem;
         }
 
@@ -162,9 +174,9 @@
             width: 35%;
             margin: 2vh 0;
 
-        @media screen and (min-width: 1030px) and (max-width: 1280px) {
-            width: 50%;
-        }
+            @media screen and (min-width: 1030px) and (max-width: 1280px) {
+                width: 100%;
+            }
 
             @media screen and (min-width: 475px) and (max-width: 1030px) {
                 width: 50%;
@@ -173,6 +185,7 @@
             @media screen and (max-width: 475px) {
                 width: 95vw;
             }
+        }
         }
 
         #contact {
@@ -184,9 +197,9 @@
             align-items: center;
             justify-content: space-between;
 
-        @media screen and (min-width: 1030px) and (max-width: 1280px) {
-            width: 50%;
-        }
+            @media screen and (min-width: 1030px) and (max-width: 1280px) {
+                width: 100%;
+            }
 
             @media screen and (min-width: 475px) and (max-width: 1030px) {
                 width: 50%;
@@ -209,10 +222,10 @@
             flex-direction: column;
             caret-color: #E6332A;
 
-        @media screen and (min-width: 1030px) and (max-width: 1280px) {
-            width: 50%;
-            margin-top: 2vh;
-        }
+            @media screen and (min-width: 1030px) and (max-width: 1280px) {
+                width: 40%;
+                margin-top: 2vh;
+            }
 
             @media screen and (min-width: 475px) and (max-width: 1030px) {
                 width: 50%;
@@ -245,13 +258,13 @@
                 }
             }
 
-            
 
-        @media screen and (min-width: 1030px) and (max-width: 1280px) {
-            textarea {
-                height: 15%;
+
+            @media screen and (min-width: 1030px) and (max-width: 1280px) {
+                textarea {
+                    height: 15%;
+                }
             }
-        }
 
             @keyframes formError {
                 0% {

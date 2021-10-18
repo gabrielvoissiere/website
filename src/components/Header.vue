@@ -14,7 +14,7 @@
     <!-- navigation -->
     <nav>
       <ul>
-        <li><a href="#">accueil</a></li>
+        <li><a><router-link to="/">Accueil</router-link></a></li>
         <li><a href="#about">a propos</a></li>
         <li><a href="#services">mes services</a></li>
         <li><a href="">portfolio</a></li>

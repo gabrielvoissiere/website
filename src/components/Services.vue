@@ -26,31 +26,31 @@
                         name: "Développement web",
                         sumup: "Développement de votre projet en assurent sa lisibilité sur tablette et mobile. Nous échangeons ensemble et en direct durant son développement et vous pouvez voir son avancement à tout moment",
                         imgUrl: "devweb-min.webp",
-                        altImg: "Développement web"
+                        altImg: "Développement web - photo by Nathan da Silva from unsplash.com"
                     },
                     {
                         name: "intégration de maquettes",
                         sumup: "Je m'occupe de l'intégration de votre maquette web desktop/mobile en utilisant les technologie moderne comme le HTML5, le CSS3 et le JavaScript ES6+. le Framework Vue JS peu aussi être utiliser pour l'intégration",
                         imgUrl: "maquette-min.webp",
-                        altImg: "intégration de maquettes"
+                        altImg: "intégration de maquettes - photo by Sigmund form unsplash.com"
                     },
                     {
                         name: "responsive design",
                         sumup: "Ajout ou amélioration du responsive sur un site web déjà existant / adaptation d'un site web à la vue tablette et mobile pour une maximum de visibilité et un référencement naturel amélioré",
                         imgUrl: "responsive-min.webp",
-                        altImg: "responsive design"
+                        altImg: "responsive design  - photo by Adeolu Eletu from unsplash.com"
                     },
                     {
                         name: "site vitrine / one page",
                         sumup: "Création de site vitrine et site one page avec adaptation tablette et mobile, structure de page optimiser pour le référencement naturel. Idéal pour se faire connaitre et/ou exposer ses produits/services à de potentiel client ",
                         imgUrl: "onepage-min.webp",
-                        altImg: "site vitrine / one page"
+                        altImg: "site vitrine / one page - photo by Igor Miske from unsplash.com"
                     },
                     {
                         name: "intervention scolaire",
                         sumup: "Intervention dans les écoles pour mettre en place des ateliers de découverte du développement web en s'amusant. Mise en place de cours d'initiation au développement web au collège et au lycée ",
                         imgUrl: "intervention.webp",
-                        altImg: "intervention scolaire"
+                        altImg: "intervention scolaire  - photo by John Schnobrich from unsplash.com"
                     }
                 ]
             }

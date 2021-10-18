@@ -1,6 +1,7 @@
 <template>
     <footer>
         <p>© Gabriel Voissiere - {{ years }}</p>
+        <router-link id="link" to="/mentions">Mention légales</router-link>
     </footer>
 </template>
 
@@ -31,5 +32,11 @@ export default {
         align-items: center;
         justify-content: center;
         color: white;
+
+        #link {
+            color: white;
+            text-decoration: none;
+            margin-left: 2vh;
+        } 
     }
 </style>
