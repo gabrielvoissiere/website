@@ -72,8 +72,10 @@
                 }
 
                 p:last-child {
-                    font-size: 2rem;
+                    font-size: 3rem;
                     margin-top: 2vh;
+                    font-weight: 300;
+                    text-shadow: 1px 1px black;
                 }
             }
 

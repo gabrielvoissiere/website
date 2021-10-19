@@ -89,7 +89,7 @@
                 }
 
                 p {
-                    width: 90%;
+                    width: 80%;
                     margin-top: 1vh;
                     font-size: 1.10rem;
                 }

@@ -31,17 +31,6 @@
                     return i * 500
                 }
             });
-
-            anime({
-                targets: '#load',
-                opacity: 0,
-                delay: 4000,
-                duration: 2500,
-                zindex: {
-                    value: 'none',
-                    delay: 2000
-                }
-            })
         }
     }
 </script>
