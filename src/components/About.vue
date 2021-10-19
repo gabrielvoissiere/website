@@ -104,6 +104,10 @@
             margin-right: 10vw;
             font-size: 1.5rem;
 
+            @media screen and (min-width: 1030px) and (max-width: 1280px) {
+                width: 40%;
+            }
+
             @media screen and (min-width: 475px) and (max-width: 1030px) {
                 width: 50%;
             }
