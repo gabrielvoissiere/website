@@ -175,7 +175,7 @@
             margin: 2vh 0;
 
             @media screen and (min-width: 1030px) and (max-width: 1280px) {
-                width: 100%;
+                width: 120%;
             }
 
             @media screen and (min-width: 475px) and (max-width: 1030px) {

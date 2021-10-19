@@ -17,7 +17,7 @@
         <li><a><router-link to="/">Accueil</router-link></a></li>
         <li><a href="#about">a propos</a></li>
         <li><a href="#services">mes services</a></li>
-        <li><a href="">portfolio</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
         <li><a id="modifier" href="#contacts">contactez moi</a></li>
       </ul>
     </nav>
